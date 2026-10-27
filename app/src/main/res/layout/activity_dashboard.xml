@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
@@ -11,91 +12,216 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/tvGreeting"
-        style="@style/TitleText"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="24dp"
-        android:textSize="28sp" />
-
-    <TextView
-        style="@style/SubtitleText"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="12dp"
-        android:text="@string/tagline" />
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <GridLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:padding="12dp">
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
 
+            <TextView
+                android:id="@+id/tvGreeting"
+                style="@style/TitleText"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:textSize="36sp" />
+
+            <TextView
+                style="@style/SubtitleText"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:text="@string/tagline" />
+
+            <!-- Up next card (slides up on open) -->
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardCourses"
-                style="@style/DashCard">
-                <LinearLayout style="@style/DashInner">
-                    <ImageView style="@style/DashIcon" android:src="@drawable/ic_school" android:contentDescription="@string/module_courses" />
-                    <TextView style="@style/DashLabel" android:text="@string/module_courses" />
-                    <TextView android:id="@+id/countCourses" style="@style/DashCount" />
+                android:id="@+id/cardNext"
+                style="@style/ListCard"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="28dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        style="@style/SubtitleText"
+                        android:text="@string/up_next"
+                        android:textColor="@color/accent"
+                        android:fontFamily="@font/poppins_medium" />
+
+                    <TextView
+                        style="@style/TitleText"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/next_title"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        style="@style/SubtitleText"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/next_desc" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_chip"
+                            android:paddingStart="12dp"
+                            android:paddingTop="6dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="6dp"
+                            android:text="@string/tag_lab"
+                            android:textColor="@color/text_primary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/bg_chip"
+                            android:paddingStart="12dp"
+                            android:paddingTop="6dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="6dp"
+                            android:text="@string/tag_room"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_tile"
+                            android:orientation="vertical"
+                            android:padding="14dp">
+
+                            <TextView
+                                style="@style/TitleText"
+                                android:text="@string/next_starts_val"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                style="@style/SubtitleText"
+                                android:text="@string/info_starts"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_weight="1.4"
+                            android:background="@drawable/bg_tile"
+                            android:orientation="vertical"
+                            android:padding="14dp">
+
+                            <TextView
+                                style="@style/TitleText"
+                                android:text="@string/next_time_val"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                style="@style/SubtitleText"
+                                android:text="@string/info_time"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnNextOpen"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/btn_open_schedule" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardSchedule"
-                style="@style/DashCard">
-                <LinearLayout style="@style/DashInner">
-                    <ImageView style="@style/DashIcon" android:src="@drawable/ic_calendar" android:contentDescription="@string/module_schedule" />
-                    <TextView style="@style/DashLabel" android:text="@string/module_schedule" />
-                    <TextView android:id="@+id/countSchedule" style="@style/DashCount" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:columnCount="2"
+                android:padding="12dp">
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardAssignments"
-                style="@style/DashCard">
-                <LinearLayout style="@style/DashInner">
-                    <ImageView style="@style/DashIcon" android:src="@drawable/ic_assignment" android:contentDescription="@string/module_assignments" />
-                    <TextView style="@style/DashLabel" android:text="@string/module_assignments" />
-                    <TextView android:id="@+id/countAssignments" style="@style/DashCount" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardCourses"
+                    style="@style/DashCard">
+                    <LinearLayout style="@style/DashInner">
+                        <ImageView style="@style/DashIcon" android:src="@drawable/ic_school" android:contentDescription="@string/module_courses" />
+                        <TextView android:id="@+id/countCourses" style="@style/DashCount" />
+                        <TextView style="@style/DashLabel" android:text="@string/module_courses" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardMessages"
-                style="@style/DashCard">
-                <LinearLayout style="@style/DashInner">
-                    <ImageView style="@style/DashIcon" android:src="@drawable/ic_chat" android:contentDescription="@string/module_messages" />
-                    <TextView style="@style/DashLabel" android:text="@string/module_messages" />
-                    <TextView android:id="@+id/countMessages" style="@style/DashCount" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardSchedule"
+                    style="@style/DashCard">
+                    <LinearLayout style="@style/DashInner">
+                        <ImageView style="@style/DashIcon" android:src="@drawable/ic_calendar" android:contentDescription="@string/module_schedule" />
+                        <TextView android:id="@+id/countSchedule" style="@style/DashCount" />
+                        <TextView style="@style/DashLabel" android:text="@string/module_schedule" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardNotices"
-                style="@style/DashCard">
-                <LinearLayout style="@style/DashInner">
-                    <ImageView style="@style/DashIcon" android:src="@drawable/ic_notifications" android:contentDescription="@string/module_notices" />
-                    <TextView style="@style/DashLabel" android:text="@string/module_notices" />
-                    <TextView android:id="@+id/countNotices" style="@style/DashCount" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardAssignments"
+                    style="@style/DashCard">
+                    <LinearLayout style="@style/DashInner">
+                        <ImageView style="@style/DashIcon" android:src="@drawable/ic_assignment" android:contentDescription="@string/module_assignments" />
+                        <TextView android:id="@+id/countAssignments" style="@style/DashCount" />
+                        <TextView style="@style/DashLabel" android:text="@string/module_assignments" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardProfile"
-                style="@style/DashCard">
-                <LinearLayout style="@style/DashInner">
-                    <ImageView style="@style/DashIcon" android:src="@drawable/ic_person" android:contentDescription="@string/module_profile" />
-                    <TextView style="@style/DashLabel" android:text="@string/module_profile" />
-                    <TextView style="@style/DashCount" android:text="@string/settings_title" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardMessages"
+                    style="@style/DashCard">
+                    <LinearLayout style="@style/DashInner">
+                        <ImageView style="@style/DashIcon" android:src="@drawable/ic_chat" android:contentDescription="@string/module_messages" />
+                        <TextView android:id="@+id/countMessages" style="@style/DashCount" />
+                        <TextView style="@style/DashLabel" android:text="@string/module_messages" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
 
-        </GridLayout>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardNotices"
+                    style="@style/DashCard">
+                    <LinearLayout style="@style/DashInner">
+                        <ImageView style="@style/DashIcon" android:src="@drawable/ic_notifications" android:contentDescription="@string/module_notices" />
+                        <TextView android:id="@+id/countNotices" style="@style/DashCount" />
+                        <TextView style="@style/DashLabel" android:text="@string/module_notices" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardProfile"
+                    style="@style/DashCard">
+                    <LinearLayout style="@style/DashInner">
+                        <ImageView style="@style/DashIcon" android:src="@drawable/ic_person" android:contentDescription="@string/module_profile" />
+                        <TextView style="@style/DashCount" android:text="@string/module_profile" android:textSize="26sp" />
+                        <TextView style="@style/DashLabel" android:text="@string/settings_title" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </GridLayout>
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>

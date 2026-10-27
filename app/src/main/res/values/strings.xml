@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">CampusNest</string>
-    <string name="tagline">Your campus, in one place</string>
+    <string name="tagline">Your intelligent campus guide and schedule manager</string>
 
-    <string name="login_title">Welcome back</string>
+    <string name="login_title">Welcome to CampusNest!</string>
     <string name="login_subtitle">Sign in to continue</string>
     <string name="hint_email_username">Email or username</string>
     <string name="hint_email">Email</string>
@@ -86,4 +86,14 @@
     <string name="add_message">New message</string>
     <string name="add_notice">Add notice</string>
     <string name="msg_email_exists">An account with this email already exists</string>
+    <string name="up_next">Up next</string>
+    <string name="next_title">Machine Learning Lecture</string>
+    <string name="next_desc">Practical session on model evaluation with guided examples.</string>
+    <string name="tag_lab">Laboratory</string>
+    <string name="tag_room">Block B, Room 204</string>
+    <string name="info_starts">Starts in</string>
+    <string name="info_time">Time</string>
+    <string name="next_starts_val">45 min</string>
+    <string name="next_time_val">09:00 - 10:30</string>
+    <string name="btn_open_schedule">Open schedule</string>
 </resources>

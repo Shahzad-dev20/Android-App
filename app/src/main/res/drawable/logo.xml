@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp" android:height="100dp"
+    android:viewportWidth="100" android:viewportHeight="100">
+
+    <!-- cream rounded square -->
+    <path android:fillColor="#F3F2EF"
+        android:pathData="M22,0 H78 A22,22 0 0 1 100,22 V78 A22,22 0 0 1 78,100 H22 A22,22 0 0 1 0,78 V22 A22,22 0 0 1 22,0 Z" />
+
+    <!-- flashlight -->
+    <path android:fillColor="#111110"
+        android:pathData="M47,9 h6 v3 h-6 z M46,12 h8 v16 h-8 z M44,28 h12 l2,8 h-16 z" />
+    <path android:fillColor="#E9B949"
+        android:pathData="M43,36 h14 v2 h-14 z" />
+
+    <!-- faded tiles -->
+    <path android:fillColor="#E1DFD8"
+        android:pathData="M47.5,44 h5 a3,3 0 0 1 3,3 v5 a3,3 0 0 1 -3,3 h-5 a3,3 0 0 1 -3,-3 v-5 a3,3 0 0 1 3,-3 z
+        M40.5,58 h5 a3,3 0 0 1 3,3 v5 a3,3 0 0 1 -3,3 h-5 a3,3 0 0 1 -3,-3 v-5 a3,3 0 0 1 3,-3 z
+        M33.5,72 h5 a3,3 0 0 1 3,3 v5 a3,3 0 0 1 -3,3 h-5 a3,3 0 0 1 -3,-3 v-5 a3,3 0 0 1 3,-3 z
+        M47.5,72 h5 a3,3 0 0 1 3,3 v5 a3,3 0 0 1 -3,3 h-5 a3,3 0 0 1 -3,-3 v-5 a3,3 0 0 1 3,-3 z" />
+
+    <!-- gold tiles -->
+    <path android:fillColor="#E9B949"
+        android:pathData="M54.5,58 h5 a3,3 0 0 1 3,3 v5 a3,3 0 0 1 -3,3 h-5 a3,3 0 0 1 -3,-3 v-5 a3,3 0 0 1 3,-3 z
+        M61.5,72 h5 a3,3 0 0 1 3,3 v5 a3,3 0 0 1 -3,3 h-5 a3,3 0 0 1 -3,-3 v-5 a3,3 0 0 1 3,-3 z" />
+</vector>

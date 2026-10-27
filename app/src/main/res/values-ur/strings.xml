@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">CampusNest</string>
-    <string name="tagline">آپ کا کیمپس، ایک ہی جگہ</string>
+    <string name="tagline">آپ کا ذہین کیمپس گائیڈ اور شیڈول مینیجر</string>
 
-    <string name="login_title">خوش آمدید</string>
+    <string name="login_title">کیمپس نیسٹ میں خوش آمدید!</string>
     <string name="login_subtitle">جاری رکھنے کے لیے سائن اِن کریں</string>
     <string name="hint_email_username">ای میل یا صارف نام</string>
     <string name="hint_email">ای میل</string>
@@ -86,4 +86,14 @@
     <string name="add_message">نیا پیغام</string>
     <string name="add_notice">نوٹس شامل کریں</string>
     <string name="msg_email_exists">اس ای میل سے اکاؤنٹ پہلے سے موجود ہے</string>
+    <string name="up_next">اگلی کلاس</string>
+    <string name="next_title">مشین لرننگ لیکچر</string>
+    <string name="next_desc">ماڈل کی جانچ پر عملی سیشن، رہنمائی کے ساتھ۔</string>
+    <string name="tag_lab">لیبارٹری</string>
+    <string name="tag_room">بلاک بی، کمرہ 204</string>
+    <string name="info_starts">شروع ہونے میں</string>
+    <string name="info_time">وقت</string>
+    <string name="next_starts_val">45 منٹ</string>
+    <string name="next_time_val">09:00 - 10:30</string>
+    <string name="btn_open_schedule">شیڈول کھولیں</string>
 </resources>

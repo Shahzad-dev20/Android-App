@@ -23,23 +23,29 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="28dp">
 
             <ImageView
-                android:layout_width="96dp"
-                android:layout_height="96dp"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/logo" />
 
             <TextView
                 style="@style/TitleText"
-                android:layout_marginTop="16dp"
-                android:text="@string/login_title" />
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/login_title"
+                android:textSize="38sp" />
 
             <TextView
                 style="@style/SubtitleText"
-                android:layout_marginBottom="24dp"
-                android:text="@string/login_subtitle" />
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="28dp"
+                android:gravity="center"
+                android:text="@string/tagline" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilEmail"
@@ -76,38 +82,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:padding="8dp"
                 android:text="@string/forgot_password"
-                android:textColor="?attr/colorPrimary"
-                android:textStyle="bold" />
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
 
             <Button
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="12dp"
                 android:text="@string/btn_login" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    style="@style/SubtitleText"
-                    android:text="@string/no_account" />
-
-                <TextView
-                    android:id="@+id/tvRegister"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
-                    android:text="@string/btn_register"
-                    android:textColor="?attr/colorPrimary"
-                    android:textStyle="bold" />
-            </LinearLayout>
+            <Button
+                android:id="@+id/tvRegister"
+                style="@style/AppButtonSecondary"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/btn_register" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -2,6 +2,7 @@ package com.example.campusnest;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,13 +17,15 @@ public class LoginActivity extends AppCompatActivity {
     TextInputLayout tilEmail, tilPassword;
     TextInputEditText etEmail, etPassword;
     Button btnLogin;
-    TextView tvForgot, tvRegister;
+    TextView tvForgot;
+    View tvRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         AppSettings.bind(this);
+        if (savedInstanceState == null) ShutterAnimator.open(this);
 
         tilEmail = findViewById(R.id.tilEmail);
         tilPassword = findViewById(R.id.tilPassword);

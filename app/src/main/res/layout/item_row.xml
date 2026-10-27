@@ -7,29 +7,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="18dp">
 
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/instrument_serif"
             android:textColor="@color/text_primary"
-            android:textSize="17sp"
-            android:textStyle="bold" />
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/tvSubtitle"
             style="@style/SubtitleText"
-            android:layout_marginTop="2dp"
-            android:textSize="14sp" />
+            android:layout_marginTop="2dp" />
 
         <TextView
             android:id="@+id/tvMeta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textColor="?attr/colorPrimary"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_chip"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp" />
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>
