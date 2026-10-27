@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">CampusNest</string>
+    <string name="tagline">Your campus, in one place</string>
+
+    <string name="login_title">Welcome back</string>
+    <string name="login_subtitle">Sign in to continue</string>
+    <string name="hint_email_username">Email or username</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_name">Full name</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="hint_new_password">New password</string>
+
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_create_account">Create account</string>
+    <string name="btn_send_reset">Send reset link</string>
+    <string name="btn_save_password">Save new password</string>
+    <string name="btn_logout">Logout</string>
+
+    <string name="forgot_password">Forgot password?</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="login_link">Login</string>
+
+    <string name="register_title">Create account</string>
+    <string name="forgot_title">Forgot password</string>
+    <string name="forgot_desc">Enter your email and we will send you a reset link.</string>
+    <string name="reset_title">Reset password</string>
+    <string name="reset_desc">Choose a new password for your account.</string>
+
+    <string name="dashboard_title">Dashboard</string>
+    <string name="welcome_user">Hello, %1$s</string>
+    <string name="module_courses">Courses</string>
+    <string name="module_schedule">Schedule</string>
+    <string name="module_assignments">Assignments</string>
+    <string name="module_messages">Messages</string>
+    <string name="module_notices">Notices</string>
+    <string name="module_profile">Profile</string>
+    <string name="profile_title">My profile</string>
+
+    <string name="error_required">This field is required</string>
+    <string name="error_email_invalid">Enter a valid email</string>
+    <string name="error_password_short">Password must be at least 6 characters</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_login_failed">Wrong email/username or password</string>
+    <string name="msg_register_success">Account created. Please login.</string>
+    <string name="msg_reset_sent">Reset link sent (simulated)</string>
+    <string name="msg_email_not_found">No account found with this email</string>
+    <string name="msg_password_changed">Password changed. Please login.</string>
+    <string name="msg_coming_soon">%1$s - coming soon</string>
+
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="greeting_format">%1$s, %2$s</string>
+    <string name="items_count">%1$d items</string>
+    <string name="settings_title">Settings</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="language">Language</string>
+    <string name="lang_english">English</string>
+    <string name="lang_urdu">اردو</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="add_item">Add</string>
+    <string name="empty_list">Nothing here yet. Tap + to add.</string>
+    <string name="item_deleted">Deleted</string>
+    <string name="undo">Undo</string>
+
+    <string name="hint_course_name">Course name</string>
+    <string name="hint_teacher">Teacher</string>
+    <string name="hint_credits">Credit hours</string>
+    <string name="hint_subject">Subject</string>
+    <string name="hint_day">Day</string>
+    <string name="hint_time">Time</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_due">Due date</string>
+    <string name="hint_sender">Sender</string>
+    <string name="hint_message">Message</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_date">Date</string>
+
+    <string name="add_course">Add course</string>
+    <string name="add_class">Add class</string>
+    <string name="add_assignment">Add assignment</string>
+    <string name="add_message">New message</string>
+    <string name="add_notice">Add notice</string>
+    <string name="msg_email_exists">An account with this email already exists</string>
+</resources>

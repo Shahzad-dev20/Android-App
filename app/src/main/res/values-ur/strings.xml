@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">CampusNest</string>
+    <string name="tagline">آپ کا کیمپس، ایک ہی جگہ</string>
+
+    <string name="login_title">خوش آمدید</string>
+    <string name="login_subtitle">جاری رکھنے کے لیے سائن اِن کریں</string>
+    <string name="hint_email_username">ای میل یا صارف نام</string>
+    <string name="hint_email">ای میل</string>
+    <string name="hint_name">پورا نام</string>
+    <string name="hint_password">پاس ورڈ</string>
+    <string name="hint_confirm_password">پاس ورڈ کی تصدیق کریں</string>
+    <string name="hint_new_password">نیا پاس ورڈ</string>
+
+    <string name="btn_login">لاگ اِن</string>
+    <string name="btn_register">رجسٹر کریں</string>
+    <string name="btn_create_account">اکاؤنٹ بنائیں</string>
+    <string name="btn_send_reset">ری سیٹ لنک بھیجیں</string>
+    <string name="btn_save_password">نیا پاس ورڈ محفوظ کریں</string>
+    <string name="btn_logout">لاگ آؤٹ</string>
+
+    <string name="forgot_password">پاس ورڈ بھول گئے؟</string>
+    <string name="no_account">اکاؤنٹ نہیں ہے؟</string>
+    <string name="have_account">پہلے سے اکاؤنٹ ہے؟</string>
+    <string name="login_link">لاگ اِن</string>
+
+    <string name="register_title">اکاؤنٹ بنائیں</string>
+    <string name="forgot_title">پاس ورڈ بھول گئے</string>
+    <string name="forgot_desc">اپنا ای میل درج کریں، ہم آپ کو ری سیٹ لنک بھیجیں گے۔</string>
+    <string name="reset_title">پاس ورڈ ری سیٹ کریں</string>
+    <string name="reset_desc">اپنے اکاؤنٹ کے لیے نیا پاس ورڈ منتخب کریں۔</string>
+
+    <string name="dashboard_title">ڈیش بورڈ</string>
+    <string name="welcome_user">خوش آمدید، %1$s</string>
+    <string name="module_courses">کورسز</string>
+    <string name="module_schedule">شیڈول</string>
+    <string name="module_assignments">اسائنمنٹس</string>
+    <string name="module_messages">پیغامات</string>
+    <string name="module_notices">نوٹسز</string>
+    <string name="module_profile">پروفائل</string>
+    <string name="profile_title">میری پروفائل</string>
+
+    <string name="error_required">یہ خانہ ضروری ہے</string>
+    <string name="error_email_invalid">درست ای میل درج کریں</string>
+    <string name="error_password_short">پاس ورڈ کم از کم 6 حروف کا ہونا چاہیے</string>
+    <string name="error_password_mismatch">پاس ورڈ مماثل نہیں ہیں</string>
+    <string name="error_login_failed">ای میل/صارف نام یا پاس ورڈ غلط ہے</string>
+    <string name="msg_register_success">اکاؤنٹ بن گیا۔ براہ کرم لاگ اِن کریں۔</string>
+    <string name="msg_reset_sent">ری سیٹ لنک بھیج دیا گیا (فرضی)</string>
+    <string name="msg_email_not_found">اس ای میل کا کوئی اکاؤنٹ نہیں ملا</string>
+    <string name="msg_password_changed">پاس ورڈ تبدیل ہو گیا۔ براہ کرم لاگ اِن کریں۔</string>
+    <string name="msg_coming_soon">%1$s - جلد آ رہا ہے</string>
+
+    <string name="greeting_morning">صبح بخیر</string>
+    <string name="greeting_afternoon">دوپہر بخیر</string>
+    <string name="greeting_evening">شام بخیر</string>
+    <string name="greeting_format">%1$s، %2$s</string>
+    <string name="items_count">%1$d آئٹمز</string>
+    <string name="settings_title">ترتیبات</string>
+    <string name="dark_mode">ڈارک موڈ</string>
+    <string name="language">زبان</string>
+    <string name="lang_english">English</string>
+    <string name="lang_urdu">اردو</string>
+    <string name="btn_save">محفوظ کریں</string>
+    <string name="btn_cancel">منسوخ</string>
+    <string name="add_item">شامل کریں</string>
+    <string name="empty_list">ابھی کچھ نہیں ہے۔ شامل کرنے کے لیے + دبائیں۔</string>
+    <string name="item_deleted">حذف کر دیا گیا</string>
+    <string name="undo">واپس</string>
+
+    <string name="hint_course_name">کورس کا نام</string>
+    <string name="hint_teacher">استاد</string>
+    <string name="hint_credits">کریڈٹ اوقات</string>
+    <string name="hint_subject">مضمون</string>
+    <string name="hint_day">دن</string>
+    <string name="hint_time">وقت</string>
+    <string name="hint_title">عنوان</string>
+    <string name="hint_due">آخری تاریخ</string>
+    <string name="hint_sender">بھیجنے والا</string>
+    <string name="hint_message">پیغام</string>
+    <string name="hint_description">تفصیل</string>
+    <string name="hint_date">تاریخ</string>
+
+    <string name="add_course">کورس شامل کریں</string>
+    <string name="add_class">کلاس شامل کریں</string>
+    <string name="add_assignment">اسائنمنٹ شامل کریں</string>
+    <string name="add_message">نیا پیغام</string>
+    <string name="add_notice">نوٹس شامل کریں</string>
+    <string name="msg_email_exists">اس ای میل سے اکاؤنٹ پہلے سے موجود ہے</string>
+</resources>
