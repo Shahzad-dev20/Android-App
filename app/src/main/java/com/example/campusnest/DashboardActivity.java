@@ -44,23 +44,23 @@ public class DashboardActivity extends AppCompatActivity {
         if (savedInstanceState == null) animateIn();
     }
 
-    // The "Up next" card slides up, then the 6 cards rise one by one
+    // Smooth, lightweight entrance animation
     private void animateIn() {
         float d = getResources().getDisplayMetrics().density;
 
         View next = findViewById(R.id.cardNext);
         next.setAlpha(0f);
-        next.setTranslationY(90 * d);
+        next.setTranslationY(16 * d);
         next.animate().alpha(1f).translationY(0)
-                .setStartDelay(300).setDuration(800)
-                .setInterpolator(new DecelerateInterpolator(2f)).start();
+                .setDuration(300)
+                .setInterpolator(new DecelerateInterpolator()).start();
 
         for (int i = 0; i < CARDS.length; i++) {
             View c = findViewById(CARDS[i]);
             c.setAlpha(0f);
-            c.setTranslationY(40 * d);
+            c.setTranslationY(16 * d);
             c.animate().alpha(1f).translationY(0)
-                    .setStartDelay(500 + i * 90L).setDuration(600)
+                    .setStartDelay(100 + i * 40L).setDuration(350)
                     .setInterpolator(new DecelerateInterpolator()).start();
         }
     }
